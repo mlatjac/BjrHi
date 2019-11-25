@@ -80,5 +80,19 @@ class InstallBjrHi extends Command
             __DIR__.'/stubs/User.php',
             app_path('User.php')
         );
+
+        // Copy the front end configs
+
+        // package.json
+        File::copy(
+            __DIR__.'/stubs/package.json',
+            base_path('package.json')
+        );
+
+        // Move the User model
+        File::copy(
+            __DIR__.'/stubs/bootstrap.js',
+            resource_path('js/bootstrap.js')
+        );
     }
 }
