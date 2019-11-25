@@ -12,18 +12,24 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require mlatjac/bjrhi
+$ composer require mlatjac/bjrhi --dev
 ```
 
 ## Usage
 
-Remember language
+``` bash
+composer require mlatjac/bjrhi --dev
+composer require mlatjac/fren
+php artisan bjrhi:install
+php artisan migrate
+npm run dev
+```
 
-Associate current language with user at registration
-
-Change to user's preferred locale on login
-
-Setup localized notifications
+Your Laravel project will then:
+* Remember language
+* Associate current language with user at registration
+* Change to user's preferred locale on login
+* Setup localized notifications
 
 
 ## Change log
