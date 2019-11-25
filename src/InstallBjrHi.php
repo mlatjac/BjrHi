@@ -89,10 +89,22 @@ class InstallBjrHi extends Command
             base_path('package.json')
         );
 
-        // Move the User model
+        // app.js
+        File::copy(
+            __DIR__.'/stubs/app.js',
+            resource_path('js/app.js')
+        );
+
+        // bootstrap
         File::copy(
             __DIR__.'/stubs/bootstrap.js',
             resource_path('js/bootstrap.js')
+        );
+
+        // sass
+        File::copyDirectory(
+            __DIR__.'/stubs/sass',
+            resource_path('sass')
         );
     }
 }
