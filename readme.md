@@ -22,6 +22,7 @@ composer require mlatjac/bjrhi --dev
 composer require mlatjac/fren
 php artisan bjrhi:install
 php artisan migrate
+npm install
 npm run dev
 ```
 
