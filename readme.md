@@ -67,11 +67,11 @@ license. Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/mlatjac/bjrhi.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/mlatjac/bjrhi.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/mlatjac/bjrhi/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-styleci]: https://styleci.io/repos/221808307/shield
 
 [link-packagist]: https://packagist.org/packages/mlatjac/bjrhi
 [link-downloads]: https://packagist.org/packages/mlatjac/bjrhi
 [link-travis]: https://travis-ci.org/mlatjac/bjrhi
-[link-styleci]: https://styleci.io/repos/12345678
+[link-styleci]: https://styleci.io/repos/221808307
 [link-author]: https://github.com/mlatjac
 [link-contributors]: ../../contributors
