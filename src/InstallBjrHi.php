@@ -44,10 +44,41 @@ class InstallBjrHi extends Command
             base_path('vendor/caouecs/laravel-lang/json/fr.json'),
             resource_path('lang/fr.json')
         );
+
         // Move vendor/caouecs/laravel-lang/fr/ * to resources/lang/fr
         File::copyDirectory(
             base_path('vendor/caouecs/laravel-lang/src/fr'),
             resource_path('lang/fr/')
+        );
+
+        // Move the controller
+        File::copyDirectory(
+            __DIR__.'/stubs/Controllers',
+            base_path('app/Http/Controllers')
+        );
+
+        // Move a basic routes file
+        File::copy(
+            __DIR__.'/stubs/web.php',
+            base_path('routes/web.php')
+        );
+
+        // Move all the views
+        File::copyDirectory(
+            __DIR__.'/stubs/views',
+            resource_path('views')
+        );
+
+        // Move the migrations
+        File::copyDirectory(
+            __DIR__.'/stubs/migrations',
+            base_path('database/migrations')
+        );
+
+        // Move the User model
+        File::copy(
+            __DIR__.'/stubs/User.php',
+            app_path('User.php')
         );
     }
 }

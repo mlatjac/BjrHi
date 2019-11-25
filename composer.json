@@ -1,6 +1,6 @@
 {
     "name": "mlatjac/bjrhi",
-    "description": ":description",
+    "description": "Use on a new Laravel project to setup ui scaffolding including register and login in both French and English",
     "license": "MIT",
     "authors": [
         {

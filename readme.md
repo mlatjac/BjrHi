@@ -17,6 +17,15 @@ $ composer require mlatjac/bjrhi
 
 ## Usage
 
+Remember language
+
+Associate current language with user at registration
+
+Change to user's preferred locale on login
+
+Setup localized notifications
+
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
