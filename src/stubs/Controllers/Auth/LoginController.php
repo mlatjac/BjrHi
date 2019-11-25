@@ -44,13 +44,11 @@ class LoginController extends Controller
     {
         $userPreferredLocale = Auth::user()->locale;
 
-        if (null !== $userPreferredLocale)
-        {
+        if (null !== $userPreferredLocale) {
             // Change the app language
             App::setLocale($userPreferredLocale);
             // Remember it is the session
-            Session::put('applocale',  $userPreferredLocale);
+            Session::put('applocale', $userPreferredLocale);
         }
-
     }
 }
