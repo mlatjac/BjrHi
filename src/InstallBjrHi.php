@@ -106,5 +106,18 @@ class InstallBjrHi extends Command
             __DIR__.'/stubs/sass',
             resource_path('sass')
         );
+
+        // include other language files
+        // Other kanguage resources
+        File::copy(
+            __DIR__.'/stubs/en/other.php',
+            resource_path('lang/en/other.php')
+        );
+
+        File::copy(
+            __DIR__.'/stubs/fr/other.php',
+            resource_path('lang/fr/other.php')
+        );
+
     }
 }
