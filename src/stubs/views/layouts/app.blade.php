@@ -17,7 +17,26 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        .hidden {
+            display:none;
+        }
+
+        .animate {
+            animation: rotation 2s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -82,5 +101,22 @@
             @yield('content')
         </main>
     </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    if (null !== document.forms && document.forms.length > 0) {
+        var btn = document.querySelector('button[type="submit"]');
+        var form = document.forms[0];
+
+        btn.addEventListener('click', function (ev) {
+            if (form.checkValidity()) {
+                btn.querySelector('.action-label').classList.add('hidden');
+                btn.querySelector('.action-being-performed').classList.remove('hidden');
+            } else {
+                ev.preventDefault();
+            }
+        });
+    }
+});
+</script>
 </body>
 </html>

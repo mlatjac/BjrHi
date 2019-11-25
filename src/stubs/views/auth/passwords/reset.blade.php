@@ -52,6 +52,8 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
+                                    <span class="action-label"></span>
+                                    <span class="action-being-performed hidden"><span class="fa fa-cog animate"></span></span>
                                     {{ __('Reset Password') }}
                                 </button>
                             </div>
