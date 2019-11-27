@@ -118,6 +118,5 @@ class InstallBjrHi extends Command
             __DIR__.'/stubs/fr/other.php',
             resource_path('lang/fr/other.php')
         );
-
     }
 }

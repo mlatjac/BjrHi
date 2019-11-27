@@ -3,7 +3,6 @@
 namespace Mlatjac\BjrHi;
 
 use Illuminate\Support\ServiceProvider;
-use Mlatjac\BjrHi\InstallBjrHi;
 
 class BjrHiServiceProvider extends ServiceProvider
 {
@@ -49,7 +48,7 @@ class BjrHiServiceProvider extends ServiceProvider
     {
         return ['bjrhi'];
     }
-    
+
     /**
      * Console-specific booting.
      *
